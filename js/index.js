@@ -1,4 +1,4 @@
-let audioSecond = new Audio("../audio/audio-secound-page.mpeg");
+let audioSecond = new Audio("./audio/audio-secound-page.mpeg");
 let crashed;
 const gameApp = {
   appName: "ghosts-forest",
@@ -30,7 +30,7 @@ const gameApp = {
   },
   setImageInstance() {
     this.girlInstance = new Image();
-    this.girlInstance.src = "../image/girl-in-forest.png";
+    this.girlInstance.src = "./image/girl-in-forest.png";
   },
   setEventListeners() {
     document.onkeyup = (event) => {
