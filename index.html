@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Ghost Forest</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/madeilon-duskille"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-page-content">
+        <div class="ghost-forest-title">
+          <h1>Ghost Forest</h1>
+          <h3>Help the lost girl avoiding the ghosts in the forest!</h3>
+        </div>
+        <div class="start-button-con">
+          <button id="start-button">Start Game</button>
+          <p class="use-paragraph">
+            Use the Up & Down Button to move the Girl!
+          </p>
+          <p class="developed">Developed by Hesam & Bernard | 2023</p>
+        </div>
+      </div>
+      <img
+        id="forest"
+        style="display: none"
+        src="./image/forest.jpeg"
+        alt="The Forest"
+      />
+      <div class="game-page">
+        <div class="point-div" style="display: none">
+          <span>Your Score:</span>
+          <span id="point-text1"></span>
+        </div>
+        <div class="point">
+          <img
+            id="ghost"
+            class="ghost-photo"
+            src="./image/ghost-secound-page.png"
+            alt="ghost-in-forest"
+          />
+
+          <img
+            id="forest"
+            style="display: none"
+            src="./image/forest.jpeg"
+            alt="The Forest"
+          />
+        </div>
+        <canvas id="canvas" width="1200px" height="350px" class="canvas">
+          Your browser does not support the canvas element.
+        </canvas>
+      </div>
+
+      <div id="end-game" class="end-game">
+        <h1>Game Over</h1>
+        <h2>Hahaha I Catch You!</h2>
+        <div class="point-container">
+          <h1>Your final score is:</h1>
+          <span id="point-text2"></span>
+        </div>
+        <button id="restart-btn">Restart</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
