@@ -91,6 +91,10 @@ const gameApp = {
       )
     );
   },
+  repeatSound() {
+    audioSecond.currentTime = 0;
+    audioSecond.play();
+  },
 };
 
 window.onload = () => {
@@ -108,6 +112,9 @@ window.onload = () => {
   function startGame() {
     gameApp.init();
   }
+  audioSecond.addEventListener("ended", () => {
+    gameApp.repeatSound();
+  });
 };
 
 class ghosts {
