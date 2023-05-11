@@ -41,6 +41,11 @@ const gameApp = {
       if (key == "ArrowDown") {
         this.girlSpecs.pos.y += 45;
       }
+      if (this.girlSpecs.pos.y < 0) {
+        this.girlSpecs.pos.y = 0;
+      } else if (this.girlSpecs.pos.y > this.canvasSize.h - this.girlSpecs.size.h) {
+        this.girlSpecs.pos.y = this.canvasSize.h - this.girlSpecs.size.h;
+      }
     };
   },
   //
